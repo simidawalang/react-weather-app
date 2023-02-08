@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+@import "./components/Input/input";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("./assets/images/waterfall.avif");
+}
+
+.app {
+  color: #fff;
+  position: absolute;
+  padding: 1.5rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
+.city-data {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.other-data {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: rgba(#fff, 0.3);
+  border-radius: 10px;
+  width: fit-content;
+  margin: 40px auto 0;
+  padding: 10px 16px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-md {
+  font-size: 1.5rem;
+  @media screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.text-lg {
+  margin-top: 16px;
+  font-size: 4rem;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 6rem;
+  }
+}
+
+.weather-description {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
