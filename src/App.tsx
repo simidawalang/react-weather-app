@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const API_KEY = "4e390c4c44fcd728e7c86d8c882463ce";
+  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`;
 
