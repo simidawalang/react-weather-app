@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import axios from "axios";
 import { Input } from "./components";
 import { searchIcon, spinnerIcon } from "./assets/svgs";
@@ -36,9 +36,10 @@ function App() {
       console.debug(e);
     }
     setLoading(false);
+    return;
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     getData();
   }, []);
 
